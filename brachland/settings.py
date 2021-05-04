@@ -169,3 +169,8 @@ SERVER_URL = "www.brachland.org"
 ADMINPORTAL_NAME = "juntagrico.solawi-brachland.ch"
 ADMINPORTAL_SERVER_URL = "juntagrico.solawi-brachland.ch"
 STYLE_SHEET = "/static/brachland/css/customize.css"
+
+BYLAWS = "https://solawi-brachland.ch/wp-content/uploads/2021/03/Statuten-Solawi.pdf"
+
+BUSINESS_REGULATIONS = "https://solawi-brachland.ch/wp-content/uploads/2021/03/Betriebsreglement.pdf"
+
