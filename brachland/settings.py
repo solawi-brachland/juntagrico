@@ -165,7 +165,7 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
 SHARE_PRICE = "300"
 
 INFO_EMAIL = "fam.raths@bluewin.ch"
-SERVER_URL = "www.brachland.org"
+SERVER_URL = "solawi-brachland.ch"
 ADMINPORTAL_NAME = "juntagrico.solawi-brachland.ch"
 ADMINPORTAL_SERVER_URL = "juntagrico.solawi-brachland.ch"
 STYLE_SHEET = "/static/brachland/css/customize.css"
