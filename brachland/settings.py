@@ -158,13 +158,13 @@ ORGANISATION_ADDRESS = {"name":"Solawi Brachland",
             "city" : "Bubikon",
             "extra" : ""}
 ORGANISATION_BANK_CONNECTION = {"PC" : "-",
-            "IBAN" : "CH82 0900 00000 1566 3679 2",
+            "IBAN" : "CH82 0900 0000 1566 3679 2",
             "BIC" : "POFICHBEXXX",
             "NAME" : "Postfinance AG",
             "ESR" : ""}
 SHARE_PRICE = "300"
 
-INFO_EMAIL = "fam.raths@bluewin.ch"
+INFO_EMAIL = "willkommen@solawi-brachland.ch"
 SERVER_URL = "solawi-brachland.ch"
 ADMINPORTAL_NAME = "juntagrico.solawi-brachland.ch"
 ADMINPORTAL_SERVER_URL = "juntagrico.solawi-brachland.ch"
