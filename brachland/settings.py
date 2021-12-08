@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Temporär eingefügt zum debuggen
 ADMINS = (
-    ('Admin', 'deine_email@adresse.ch'),
+    ('Admin', 'mike.portworsnick@gncs.net'),
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
