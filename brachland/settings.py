@@ -166,7 +166,10 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "BIC" : "POFICHBEXXX",
             "NAME" : "Postfinance AG",
             "ESR" : ""}
-SHARE_PRICE = "300"
+# Am 19.12.2021 eingefügt, da die Solawi Brachland bis auf weiteres kein Verein ist und es keine Anteilsscheine gibt.
+ENABLE_SHARES = False
+
+SHARE_PRICE = "0"
 
 INFO_EMAIL = "willkommen@solawi-brachland.ch"
 SERVER_URL = "solawi-brachland.ch"
