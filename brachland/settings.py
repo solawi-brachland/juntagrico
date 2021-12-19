@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'juntagrico',
-    ‘adminsortable2’,
+    'adminsortable2',
     'impersonate',
     'crispy_forms',
     'brachland',
