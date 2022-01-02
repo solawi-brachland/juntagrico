@@ -7,11 +7,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Temporär eingefügt zum debuggen
-ADMINS = (
-    ('Admin', 'mike.portworsnick@gncs.net'),
-)
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 
@@ -166,7 +161,9 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "BIC" : "POFICHBEXXX",
             "NAME" : "Postfinance AG",
             "ESR" : ""}
+
 # Am 19.12.2021 eingefügt, da die Solawi Brachland bis auf weiteres kein Verein ist und es keine Anteilsscheine gibt.
+
 ENABLE_SHARES = False
 
 SHARE_PRICE = "0"
