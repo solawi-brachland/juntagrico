@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'adminsortable2',
     'juntagrico',
     'adminsortable2',
     'impersonate',
