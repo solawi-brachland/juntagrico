@@ -1,0 +1,62 @@
+{% extends "no_menu_base.html" %}
+{% load i18n %}
+{% load juntagrico.config %}
+{% block all_page_title %}
+    <div class="page-title offset-md-2 col-md-8">
+        <h3>
+            {% trans "Wähle dein Startdatum" %}
+        </h3>
+    </div>
+{% endblock %}
+{% block allcontent %}
+    {% vocabulary "subscription" as v_subscription %}
+    <div class="offset-md-2 col-md-8">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                {% trans "Info" %}:
+                {% blocktrans trimmed with sd=start_date|date:"d.m.Y" %}
+                    Anbauplanung, Beetpflege und erste Aussaaten stehen lange vor der ersten Ernte an.
+                    Deshalb erfolgt die Bezahlung der Abo-Kosten entsprechend den Grundgedanken der
+                    Solidarischen Landwirtschaft vor Saisonbeginn – also bis Ende Januar eines jeden Jahres.
+                    So legen wir den formellen Abo-Start auf Anfang Jahr.<br>
+                    Das nächste Startdatum wäre der <strong>{{ sd }}</strong>.<br>
+                    Es kann jedoch vorkommen, dass unter dem Jahr ein Abo frei wird.
+                    Würdest Du gerne früher einsteigen falls ein Abo frei wird, dann
+                    kannst Du das Startdatum unten individuell anpassen.
+                {% endblocktrans %}
+            </div>
+        </div>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div id="start_date" class="form-group row">
+                <label class="col-md-3">
+                    {% trans "Gewünschtes Startdatum" %}
+                </label>
+                <div class="col-md-9">
+                    <label>
+                        {{ subscriptionform.start_date }}
+                        {% blocktrans trimmed %}
+                        Gilt nur insofern 1 {{ v_subscription }}
+                        zum gewünschten Datum frei ist.
+                        {% endblocktrans %}
+                    </label>
+                    {% if subscriptionform.start_date.errors %}
+                        <div class="alert alert-danger">
+                            {% trans "Das gewählte Startdatum ist nicht gültig" %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="form-actions row">
+                <div class="offset-md-3 col-md-9">
+                    <button type="submit" class="btn btn-success">
+                        {% trans "Weiter" %}
+                    </button>
+                    <a href="{% url 'cs-cancel' %}" class="btn">
+                        {% trans "Abbrechen" %}
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
