@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'polymorphic',
     'juntagrico_pg',
     'juntagrico',
     'adminsortable2',
@@ -98,7 +99,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'impersonate.middleware.ImpersonateMiddleware'
+    'impersonate.middleware.ImpersonateMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
@@ -171,9 +173,9 @@ SHARE_PRICE = "0"
 
 INFO_EMAIL = "willkommen@solawi-brachland.ch"
 SERVER_URL = "solawi-brachland.ch"
-ADMINPORTAL_NAME = "juntagrico.solawi-brachland.ch"
-ADMINPORTAL_SERVER_URL = "juntagrico.solawi-brachland.ch"
-STYLE_SHEET = "/static/brachland/css/customize.css"
+STYLES = {'static': ['css/customize.css']}
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 # BYLAWS = "https://solawi-brachland.ch/wp-content/uploads/2021/03/Statuten-Solawi.pdf"
 
