@@ -178,3 +178,4 @@ STYLE_SHEET = "/static/brachland/css/customize.css"
 
 BUSINESS_REGULATIONS = "http://solawi-brachland.ch/wp-content/uploads/2022/01/Betriebsreglement-Solawi-Brachland.pdf"
 
+ASSIGNMENT_UNIT = "HOURS"
