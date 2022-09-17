@@ -2,3 +2,4 @@
 git+https://github.com/juntagrico/juntagrico.git@adf224fc4b4327526cbf4dc88e0e7b8577a2d950
 gunicorn==20.0.4
 psycopg2==2.8.4
+juntagrico-pg~=1.4.0
