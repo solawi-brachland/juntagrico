@@ -50,7 +50,8 @@ DATABASES = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'OPTIONS': {
+	'DIRS': [os.path.join(BASE_DIR, 'templates')],        
+	'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.debug',
@@ -179,6 +180,6 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 
 # BYLAWS = "https://solawi-brachland.ch/wp-content/uploads/2021/03/Statuten-Solawi.pdf"
 
-BUSINESS_REGULATIONS = "http://solawi-brachland.ch/wp-content/uploads/2022/01/Betriebsreglement-Solawi-Brachland.pdf"
+BUSINESS_REGULATIONS = "https://solawi-brachland.ch/wp-content/uploads/2023/01/Betriebsreglement-Solawi-Brachland.pdf"
 
 ASSIGNMENT_UNIT = "HOURS"
