@@ -176,7 +176,7 @@ INFO_EMAIL = "willkommen@solawi-brachland.ch"
 SERVER_URL = "solawi-brachland.ch"
 STYLES = {'static': ['css/customize.css']}
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 # BYLAWS = "https://solawi-brachland.ch/wp-content/uploads/2021/03/Statuten-Solawi.pdf"
 
